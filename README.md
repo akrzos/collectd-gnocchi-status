@@ -62,6 +62,10 @@ This plugin provides valuable insight into your metrics and measures backlog of 
     ```
 6. View metrics in your metrics on Gnocchi in your TSDB
 
+## Graphite storage-aggregation.conf Example
+
+Included in the repo is an example Graphite storage-aggregation.conf (sample-storage-aggregation.conf) to ensure that your Gnocchi status metrics are not lost due to your retention sizing (Ex. 10s:7d,60s:90d,1h:180d) < the interval (30s) this plugin is set to collect and publish samples.  Simply copy and paste the example, into your /etc/carbon/storage-aggregation.conf file on your Graphite server prior to pushing these metrics and restart carbon-cache to reload this configuration.  If the metrics have already been pushed, you must either use whisper-resize (included with Graphite) or remove the corresponding whisper files after restarting carbon-cache to allow carbon to rebuild them with the new parameters in storage-aggregation.conf.
+
 ## Resources
 1. [Gnocchi.xyz](http://gnocchi.xyz/)
 2. [Collectd.org](https://collectd.org/)
