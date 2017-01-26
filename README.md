@@ -32,7 +32,10 @@ This plugin provides valuable insight into your metrics and measures backlog of 
 
         ```
         # Populate the following variables with your stackrc/overcloudrc or openstackrc file
+        # Tenant v1&v2 api, project for v3 api
         Environment=OS_TENANT_NAME=admin
+        Environment=OS_PROJECT_NAME=admin
+
         Environment=OS_PASSWORD=xxxxxxxxxxxxxxxxxxxxxxxxx
         Environment=OS_USERNAME=admin
         Environment=OS_AUTH_URL=http://x.x.x.x:5000/v2.0
