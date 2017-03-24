@@ -1,4 +1,4 @@
-Gnocchi Status Collectd
+Collectd Gnocchi Status
 =======================
 
 ## Overview
