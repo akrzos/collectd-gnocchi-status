@@ -22,7 +22,7 @@ def read(fname):
 
 setup(
     name='collectd-gnocchi-status',
-    version='0.2.0',
+    version='0.2.1',
     description='Collectd plugin to poll for Gnocchi Status.',
     long_description=read('README.rst'),
     url='https://github.com/akrzos/collectd-gnocchi-status',
