@@ -13,34 +13,10 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 #
-import os
+
 from setuptools import setup
 
-
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
-
 setup(
-    name='collectd-gnocchi-status',
-    version='0.2.1',
-    description='Collectd plugin to poll for Gnocchi Status.',
-    long_description=read('README.rst'),
-    url='https://github.com/akrzos/collectd-gnocchi-status',
-    author='Alex Krzos',
-    author_email='akrzos@redhat.com',
-    packages=[
-        'collectd_gnocchi_status',
-    ],
-    license='Apache License 2.0',
-    classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Intended Audience :: Developers',
-        'Intended Audience :: System Administrators',
-        'License :: OSI Approved :: Apache Software License ',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.5',
-        'Topic :: System :: Monitoring',
-    ],
+    setup_requires=['pbr'],
+    pbr=True,
 )
