@@ -18,8 +18,8 @@ Sample Graph
 .. figure:: https://github.com/akrzos/collectd-gnocchi-status/blob/master/sample-gnocchi-status-collectd.png
    :alt: Sample Graph
 
-Configuration
--------------
+Install / Configuration
+-----------------------
 
 1. Assuming you have collectd installed already, append the following
    plugin details to your collectd.conf config file
@@ -105,5 +105,5 @@ Resources
 .. _Gnocchi.xyz: http://gnocchi.xyz/
 .. _Collectd.org: https://collectd.org/
 
-.. |collectd-gnocchi-status| image:: https://img.shields.io/pypi/v/collectd-gnocchi-status.svg
+.. |collectd-gnocchi-status| image:: https://badge.fury.io/py/collectd-gnocchi-status.svg
    :target: https://pypi.python.org/pypi/collectd-gnocchi-status
